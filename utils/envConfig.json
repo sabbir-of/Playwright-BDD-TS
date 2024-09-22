@@ -1,0 +1,44 @@
+{
+  "dev": {
+    "BASE_URL": "https://www.saucedemo.com",
+    "TRIVIA_ROUTE": "/admin/#/home/trivia",
+    "USERNAME": "qa-1",
+    "PASSWORD": "-wJgw8fLDX",
+    "TEAMS_WEBHOOK": "https://connectwithcue.webhook.office.com/webhookb2/c6296e94-82a6-4928-adbc-90e1d4b001d5@fee95589-ad46-417d-9636-8b4078359ad9/IncomingWebhook/bce350df5f54486aa62299e734010e15/96678977-c6d6-49cb-a8be-4e879f517bca",
+    "SLACK_WEBHOOK": "https://hooks.slack.com/services/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",
+    "ENVIRONMENT": "Testing",
+    "REPORT_LINK": "https://azmansabbir.github.io/Trivia-Testing/",
+    "PROJECT": "Trivia-Mania UI Automation",
+    "FROM_ADDRESS_MAIL": "udgo.sabbir@gmail.com",
+    "FROM_ADDRESS_PASSWORD": "jwqtedxspnbbdknu",
+    "TO_MAIL_ADDRESS": ["sabbir.of@gmail.com","unidevgo.qa1@gmail.com", "unidevgoassistant@gmail.com"]
+  },
+  "prod": {
+    "BASE_URL": "https://qa-1.tldxp.com/",
+    "TRIVIA_ROUTE": "/admin/#/home/trivia",
+    "USERNAME": "qa-1",
+    "PASSWORD": "-wJgw8fLDX",
+    "TEAMS_WEBHOOK": "https://connectwithcue.webhook.office.com/webhookb2/c6296e94-82a6-4928-adbc-90e1d4b001d5@fee95589-ad46-417d-9636-8b4078359ad9/IncomingWebhook/bce350df5f54486aa62299e734010e15/96678977-c6d6-49cb-a8be-4e879f517bca",
+    "SLACK_WEBHOOK": "https://hooks.slack.com/services/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",
+    "ENVIRONMENT": "Production",
+    "REPORT_LINK": "https://azmansabbir.github.io/Trivia-Prod/",
+    "PROJECT": "Trivia-Mania UI Automation",
+    "FROM_ADDRESS_MAIL": "udgo.sabbir@gmail.com",
+    "FROM_ADDRESS_PASSWORD": "jwqtedxspnbbdknu",
+    "TO_MAIL_ADDRESS": ["sabbir.of@gmail.com","unidevgo.qa1@gmail.com", "unidevgoassistant@gmail.com"]
+  },
+  "stg": {
+    "BASE_URL": "https://qa-1.stagingdxp.com/",
+    "TRIVIA_ROUTE": "/admin/#/home/trivia",
+    "USERNAME": "qa-1",
+    "PASSWORD": "-wJgw8fLDX",
+    "TEAMS_WEBHOOK": "https://connectwithcue.webhook.office.com/webhookb2/c6296e94-82a6-4928-adbc-90e1d4b001d5@fee95589-ad46-417d-9636-8b4078359ad9/IncomingWebhook/bce350df5f54486aa62299e734010e15/96678977-c6d6-49cb-a8be-4e879f517bca",
+    "SLACK_WEBHOOK": "https://hooks.slack.com/services/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",
+    "ENVIRONMENT": "Staging",
+    "REPORT_LINK": "https://azmansabbir.github.io/Trivia-Automation/",
+    "PROJECT": "Trivia-Mania UI Automation",
+    "FROM_ADDRESS_MAIL": "udgo.sabbir@gmail.com",
+    "FROM_ADDRESS_PASSWORD": "jwqtedxspnbbdknu",
+    "TO_MAIL_ADDRESS": ["sabbir.of@gmail.com","unidevgo.qa1@gmail.com", "unidevgoassistant@gmail.com"]
+  }
+}
