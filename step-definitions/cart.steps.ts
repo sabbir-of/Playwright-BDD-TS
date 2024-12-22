@@ -1,18 +1,24 @@
 import { expect } from "@playwright/test";
 import { createBdd } from 'playwright-bdd';
 import { test } from '../pages/fixtures';
+import logger from "../logger";
 
 const {  Given, When, Then } = createBdd(test);
 
-test.use({ storageState: 'authState.json' }); // Use the stored authentication state
 
 Given('the user has added {string} to the cart', async ({ page, loginPage, productsPage }, productName: string) => {
     
     await loginPage.goto();
+    logger.info('Logging in with standard user credentials...');
     await loginPage.doLogin('standard_user', 'secret_sauce');
+    logger.info('Verifying that the user has been redirected to the inventory page...');
     await expect(page).toHaveURL(/.*inventory.html/);
+    logger.info('Verifying that the user has been redirected to the inventory page...');
     await expect(productsPage.productHeading).toBeVisible();
+    logger.info('Verifying that the product heading is visible...');
     await productsPage.addProductToCart(productName);
+    logger.info(`Adding product "${productName}" to the cart...`);
+    
 });
 
 Given('is on the cart page', async ({ page, productsPage }) => {

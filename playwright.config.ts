@@ -2,10 +2,9 @@ import { defineConfig, devices } from '@playwright/test';
 import { defineBddConfig } from 'playwright-bdd';
 
 const testDir = defineBddConfig({
-  tags: '@desktop and not @slow',
+  // tags: '@desktop and not @slow',
   importTestFrom: './pages/fixtures.ts',
-  paths: ['feature/products.feature', 'auth.setup.ts'
-    
+  paths: ['feature/login.feature'    
   ],
   require: ['step-definitions/**/*.ts'],
   
@@ -54,13 +53,13 @@ retries: process.env.CI ? 1 : 0,
 workers: process.env.CI ? 1 : 1,
 /* Reporter to use. See https://playwright.dev/docs/test-reporters */
 
-// reporter: process.env.CI ? [["junit", {
-//   outputFile: "results.xml"
-// }]] : [["json", {
-//   outputFile: "report.json"
-// }], ["html", {
-//   open: "never"
-// }]],
+reporter: process.env.CI ? [["junit", {
+  outputFile: "results.xml"
+}]] : [["json", {
+  outputFile: "report.json"
+}], ["html", {
+  open: "never"
+}]],
 
 // reporter: [
 //   [
