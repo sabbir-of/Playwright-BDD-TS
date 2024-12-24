@@ -94,7 +94,7 @@ reporter: process.env.CI ? [["junit", {
     viewport: { width: 1700, height: 920 },
     ignoreHTTPSErrors: true,
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: process.env.CI ? "off" : "retain-on-failure",
+    trace: process.env.CI ? "off" : "on",
     video: process.env.CI ? "off" : "off",
     screenshot: process.env.CI ? "on" : "on",
   },

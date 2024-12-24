@@ -68,95 +68,21 @@
           "file": "feature/login.feature.spec.js",
           "line": 4,
           "column": 6,
-          "specs": [
-            {
-              "title": "Loocked out user must not be able to login with valid login credentials",
-              "ok": true,
-              "tags": [
-                "login",
-                "locked_out_user"
-              ],
-              "tests": [
-                {
-                  "timeout": 3000000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 1579,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "info: Navigating to the login page...\r\n"
-                        },
-                        {
-                          "text": "info: User is on the login page\r\n"
-                        },
-                        {
-                          "text": "info: User is attempting to log in with username: locked_out_user and password: secret_sauce\r\n"
-                        },
-                        {
-                          "text": "info: Login attempt completed\r\n"
-                        },
-                        {
-                          "text": "info: Checking for locked out error message...\r\n"
-                        },
-                        {
-                          "text": "info: User sees the locked out error message\r\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "steps": [
-                        {
-                          "title": "Given the User is on login page",
-                          "duration": 1133
-                        },
-                        {
-                          "title": "When the User tries to login with \"locked_out_user\" as username and \"secret_sauce\" as password",
-                          "duration": 112
-                        },
-                        {
-                          "title": "Then the User should see a locked out error message",
-                          "duration": 15
-                        }
-                      ],
-                      "startTime": "2024-12-22T18:59:30.487Z",
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\sabbi\\OneDrive\\Documents\\Home\\Playwright-BDD-TS\\test-results\\feature-login.feature-User-135dc-ith-valid-login-credentials\\test-finished-1.png"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "5c13cb1122266bae6382-1080fea39f026d87e7ec",
-              "file": "feature/login.feature.spec.js",
-              "line": 50,
-              "column": 7
-            }
-          ],
+          "specs": [],
           "suites": [
             {
               "title": "Login should work with valid login credentials",
               "file": "feature/login.feature.spec.js",
               "line": 6,
-              "column": 8,
+              "column": 17,
               "specs": [
                 {
                   "title": "Example #1",
                   "ok": true,
                   "tags": [
                     "login",
-                    "valid_creds"
+                    "valid_creds",
+                    "only"
                   ],
                   "tests": [
                     {
@@ -169,7 +95,7 @@
                         {
                           "workerIndex": 0,
                           "status": "passed",
-                          "duration": 2467,
+                          "duration": 3292,
                           "errors": [],
                           "stdout": [
                             {
@@ -196,23 +122,28 @@
                           "steps": [
                             {
                               "title": "Given the User is on login page",
-                              "duration": 1721
+                              "duration": 2343
                             },
                             {
                               "title": "When the User tries to login with \"standard_user\" as username and \"secret_sauce\" as password",
-                              "duration": 153
+                              "duration": 159
                             },
                             {
                               "title": "Then the User should be on Products page",
-                              "duration": 27
+                              "duration": 36
                             }
                           ],
-                          "startTime": "2024-12-22T18:59:14.282Z",
+                          "startTime": "2024-12-23T12:39:09.747Z",
                           "attachments": [
                             {
                               "name": "screenshot",
                               "contentType": "image/png",
                               "path": "C:\\Users\\sabbi\\OneDrive\\Documents\\Home\\Playwright-BDD-TS\\test-results\\feature-login.feature-User-b34de-login-credentials-Example-1\\test-finished-1.png"
+                            },
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\sabbi\\OneDrive\\Documents\\Home\\Playwright-BDD-TS\\test-results\\feature-login.feature-User-b34de-login-credentials-Example-1\\trace.zip"
                             }
                           ]
                         }
@@ -230,7 +161,8 @@
                   "ok": true,
                   "tags": [
                     "login",
-                    "valid_creds"
+                    "valid_creds",
+                    "only"
                   ],
                   "tests": [
                     {
@@ -243,7 +175,7 @@
                         {
                           "workerIndex": 0,
                           "status": "passed",
-                          "duration": 1414,
+                          "duration": 11753,
                           "errors": [],
                           "stdout": [
                             {
@@ -270,23 +202,28 @@
                           "steps": [
                             {
                               "title": "Given the User is on login page",
-                              "duration": 930
+                              "duration": 11107
                             },
                             {
                               "title": "When the User tries to login with \"problem_user\" as username and \"secret_sauce\" as password",
-                              "duration": 138
+                              "duration": 149
                             },
                             {
                               "title": "Then the User should be on Products page",
                               "duration": 20
                             }
                           ],
-                          "startTime": "2024-12-22T18:59:17.062Z",
+                          "startTime": "2024-12-23T12:39:13.508Z",
                           "attachments": [
                             {
                               "name": "screenshot",
                               "contentType": "image/png",
                               "path": "C:\\Users\\sabbi\\OneDrive\\Documents\\Home\\Playwright-BDD-TS\\test-results\\feature-login.feature-User-04d8a-login-credentials-Example-2\\test-finished-1.png"
+                            },
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\sabbi\\OneDrive\\Documents\\Home\\Playwright-BDD-TS\\test-results\\feature-login.feature-User-04d8a-login-credentials-Example-2\\trace.zip"
                             }
                           ]
                         }
@@ -304,7 +241,8 @@
                   "ok": true,
                   "tags": [
                     "login",
-                    "valid_creds"
+                    "valid_creds",
+                    "only"
                   ],
                   "tests": [
                     {
@@ -317,7 +255,7 @@
                         {
                           "workerIndex": 0,
                           "status": "passed",
-                          "duration": 6480,
+                          "duration": 7161,
                           "errors": [],
                           "stdout": [
                             {
@@ -344,23 +282,28 @@
                           "steps": [
                             {
                               "title": "Given the User is on login page",
-                              "duration": 987
+                              "duration": 1446
                             },
                             {
                               "title": "When the User tries to login with \"performance_glitch_user\" as username and \"secret_sauce\" as password",
-                              "duration": 5140
+                              "duration": 5160
                             },
                             {
                               "title": "Then the User should be on Products page",
-                              "duration": 18
+                              "duration": 27
                             }
                           ],
-                          "startTime": "2024-12-22T18:59:18.494Z",
+                          "startTime": "2024-12-23T12:39:25.410Z",
                           "attachments": [
                             {
                               "name": "screenshot",
                               "contentType": "image/png",
                               "path": "C:\\Users\\sabbi\\OneDrive\\Documents\\Home\\Playwright-BDD-TS\\test-results\\feature-login.feature-User-2ffc9-login-credentials-Example-3\\test-finished-1.png"
+                            },
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\sabbi\\OneDrive\\Documents\\Home\\Playwright-BDD-TS\\test-results\\feature-login.feature-User-2ffc9-login-credentials-Example-3\\trace.zip"
                             }
                           ]
                         }
@@ -374,236 +317,6 @@
                   "column": 9
                 }
               ]
-            },
-            {
-              "title": "Login should fail with invalid login credentials",
-              "file": "feature/login.feature.spec.js",
-              "line": 28,
-              "column": 8,
-              "specs": [
-                {
-                  "title": "Example #1",
-                  "ok": true,
-                  "tags": [
-                    "login",
-                    "invalid_creds"
-                  ],
-                  "tests": [
-                    {
-                      "timeout": 3000000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "",
-                      "projectName": "",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "status": "passed",
-                          "duration": 1399,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "info: Navigating to the login page...\r\n"
-                            },
-                            {
-                              "text": "info: User is on the login page\r\n"
-                            },
-                            {
-                              "text": "info: User is attempting to log in with username: invalid_username and password: secret_sauce\r\n"
-                            },
-                            {
-                              "text": "info: Login attempt completed\r\n"
-                            },
-                            {
-                              "text": "info: Checking for invalid credentials error message...\r\n"
-                            },
-                            {
-                              "text": "info: User sees the invalid credentials error message\r\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "steps": [
-                            {
-                              "title": "Given the User is on login page",
-                              "duration": 957
-                            },
-                            {
-                              "title": "When the User tries to login with \"invalid_username\" as username and \"secret_sauce\" as password",
-                              "duration": 108
-                            },
-                            {
-                              "title": "Then the User should see invalid credentials error message",
-                              "duration": 17
-                            }
-                          ],
-                          "startTime": "2024-12-22T18:59:24.993Z",
-                          "attachments": [
-                            {
-                              "name": "screenshot",
-                              "contentType": "image/png",
-                              "path": "C:\\Users\\sabbi\\OneDrive\\Documents\\Home\\Playwright-BDD-TS\\test-results\\feature-login.feature-User-a124d-login-credentials-Example-1\\test-finished-1.png"
-                            }
-                          ]
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "5c13cb1122266bae6382-c4c0d353b509afe6f408",
-                  "file": "feature/login.feature.spec.js",
-                  "line": 30,
-                  "column": 9
-                },
-                {
-                  "title": "Example #2",
-                  "ok": true,
-                  "tags": [
-                    "login",
-                    "invalid_creds"
-                  ],
-                  "tests": [
-                    {
-                      "timeout": 3000000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "",
-                      "projectName": "",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "status": "passed",
-                          "duration": 2607,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "info: Navigating to the login page...\r\n"
-                            },
-                            {
-                              "text": "info: User is on the login page\r\n"
-                            },
-                            {
-                              "text": "info: User is attempting to log in with username: standard_user and password: invalid_password\r\n"
-                            },
-                            {
-                              "text": "info: Login attempt completed\r\n"
-                            },
-                            {
-                              "text": "info: Checking for invalid credentials error message...\r\n"
-                            },
-                            {
-                              "text": "info: User sees the invalid credentials error message\r\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "steps": [
-                            {
-                              "title": "Given the User is on login page",
-                              "duration": 2176
-                            },
-                            {
-                              "title": "When the User tries to login with \"standard_user\" as username and \"invalid_password\" as password",
-                              "duration": 107
-                            },
-                            {
-                              "title": "Then the User should see invalid credentials error message",
-                              "duration": 17
-                            }
-                          ],
-                          "startTime": "2024-12-22T18:59:26.409Z",
-                          "attachments": [
-                            {
-                              "name": "screenshot",
-                              "contentType": "image/png",
-                              "path": "C:\\Users\\sabbi\\OneDrive\\Documents\\Home\\Playwright-BDD-TS\\test-results\\feature-login.feature-User-ee9c6-login-credentials-Example-2\\test-finished-1.png"
-                            }
-                          ]
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "5c13cb1122266bae6382-72c7bb44c3798611c70c",
-                  "file": "feature/login.feature.spec.js",
-                  "line": 36,
-                  "column": 9
-                },
-                {
-                  "title": "Example #3",
-                  "ok": true,
-                  "tags": [
-                    "login",
-                    "invalid_creds"
-                  ],
-                  "tests": [
-                    {
-                      "timeout": 3000000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "",
-                      "projectName": "",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "status": "passed",
-                          "duration": 1435,
-                          "errors": [],
-                          "stdout": [
-                            {
-                              "text": "info: Navigating to the login page...\r\n"
-                            },
-                            {
-                              "text": "info: User is on the login page\r\n"
-                            },
-                            {
-                              "text": "info: User is attempting to log in with username: invalid_username and password: invalid_password\r\n"
-                            },
-                            {
-                              "text": "info: Login attempt completed\r\n"
-                            },
-                            {
-                              "text": "info: Checking for invalid credentials error message...\r\n"
-                            },
-                            {
-                              "text": "info: User sees the invalid credentials error message\r\n"
-                            }
-                          ],
-                          "stderr": [],
-                          "retry": 0,
-                          "steps": [
-                            {
-                              "title": "Given the User is on login page",
-                              "duration": 995
-                            },
-                            {
-                              "title": "When the User tries to login with \"invalid_username\" as username and \"invalid_password\" as password",
-                              "duration": 111
-                            },
-                            {
-                              "title": "Then the User should see invalid credentials error message",
-                              "duration": 14
-                            }
-                          ],
-                          "startTime": "2024-12-22T18:59:29.035Z",
-                          "attachments": [
-                            {
-                              "name": "screenshot",
-                              "contentType": "image/png",
-                              "path": "C:\\Users\\sabbi\\OneDrive\\Documents\\Home\\Playwright-BDD-TS\\test-results\\feature-login.feature-User-4a935-login-credentials-Example-3\\test-finished-1.png"
-                            }
-                          ]
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "5c13cb1122266bae6382-6fc59287cbcfa6679b6e",
-                  "file": "feature/login.feature.spec.js",
-                  "line": 42,
-                  "column": 9
-                }
-              ]
             }
           ]
         }
@@ -612,9 +325,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-12-22T18:59:13.115Z",
-    "duration": 32860.721000000005,
-    "expected": 7,
+    "startTime": "2024-12-23T12:39:08.465Z",
+    "duration": 24513.481,
+    "expected": 3,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

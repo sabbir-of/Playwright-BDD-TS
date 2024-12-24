@@ -3,21 +3,21 @@ import { test } from "../../pages/fixtures.ts";
 
 test.describe("User Login", () => {
 
-  test.describe("Login should work with valid login credentials", () => {
+  test.describe.only("Login should work with valid login credentials", () => {
 
-    test("Example #1", { tag: ["@login", "@valid_creds"] }, async ({ Given, loginPage, When, Then, page, productsPage }) => {
+    test("Example #1", { tag: ["@login", "@valid_creds", "@only"] }, async ({ Given, loginPage, When, Then, page, productsPage }) => {
       await Given("the User is on login page", null, { loginPage });
       await When("the User tries to login with \"standard_user\" as username and \"secret_sauce\" as password", null, { loginPage });
       await Then("the User should be on Products page", null, { page, productsPage });
     });
 
-    test("Example #2", { tag: ["@login", "@valid_creds"] }, async ({ Given, loginPage, When, Then, page, productsPage }) => {
+    test("Example #2", { tag: ["@login", "@valid_creds", "@only"] }, async ({ Given, loginPage, When, Then, page, productsPage }) => {
       await Given("the User is on login page", null, { loginPage });
       await When("the User tries to login with \"problem_user\" as username and \"secret_sauce\" as password", null, { loginPage });
       await Then("the User should be on Products page", null, { page, productsPage });
     });
 
-    test("Example #3", { tag: ["@login", "@valid_creds"] }, async ({ Given, loginPage, When, Then, page, productsPage }) => {
+    test("Example #3", { tag: ["@login", "@valid_creds", "@only"] }, async ({ Given, loginPage, When, Then, page, productsPage }) => {
       await Given("the User is on login page", null, { loginPage });
       await When("the User tries to login with \"performance_glitch_user\" as username and \"secret_sauce\" as password", null, { loginPage });
       await Then("the User should be on Products page", null, { page, productsPage });
@@ -64,9 +64,9 @@ test.use({
 });
 
 const testMetaMap = {
-  "Login should work with valid login credentials|Example #1": {"pickleLocation":"12:7","tags":["@login","@valid_creds"]},
-  "Login should work with valid login credentials|Example #2": {"pickleLocation":"13:7","tags":["@login","@valid_creds"]},
-  "Login should work with valid login credentials|Example #3": {"pickleLocation":"14:7","tags":["@login","@valid_creds"]},
+  "Login should work with valid login credentials|Example #1": {"pickleLocation":"12:7","tags":["@login","@valid_creds","@only"]},
+  "Login should work with valid login credentials|Example #2": {"pickleLocation":"13:7","tags":["@login","@valid_creds","@only"]},
+  "Login should work with valid login credentials|Example #3": {"pickleLocation":"14:7","tags":["@login","@valid_creds","@only"]},
   "Login should fail with invalid login credentials|Example #1": {"pickleLocation":"24:7","tags":["@login","@invalid_creds"]},
   "Login should fail with invalid login credentials|Example #2": {"pickleLocation":"25:7","tags":["@login","@invalid_creds"]},
   "Login should fail with invalid login credentials|Example #3": {"pickleLocation":"26:7","tags":["@login","@invalid_creds"]},

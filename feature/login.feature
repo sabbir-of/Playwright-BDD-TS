@@ -1,7 +1,7 @@
 @login
 Feature: User Login
 
-  @valid_creds
+  @valid_creds @only
   Scenario Outline: Login should work with valid login credentials
     Given the User is on login page
     When the User tries to login with "<username>" as username and "<password>" as password
